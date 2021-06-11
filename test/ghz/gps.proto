@@ -1,0 +1,20 @@
+syntax = "proto3";
+option go_package = "protos/gps";
+
+package gps;
+
+service GPSService {
+    rpc CreateGPS (CreateRequest) returns (CreateResponse);
+}
+
+message CreateRequest {
+    int64 deviceId = 1;
+    double lat = 2;
+    double lng = 3;
+    double direction = 4;
+    double speed = 5;
+}
+
+message CreateResponse {
+    bool success = 1;
+}

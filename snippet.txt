@@ -1,0 +1,5 @@
+ps axf | grep docker | grep -v grep | awk '{print "kill -9 " $1}' | sudo sh
+sudo rm /var/run/docker.pid
+sudo dockerd --config-file /etc/docker/daemon.json
+sudo nohup docker daemon -H tcp://0.0.0.0:2375 -H unix:///var/run/docker.sock
+sudo dockerd
