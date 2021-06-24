@@ -1,5 +1,6 @@
 {
     "cSpell.words": [
+        "Lookupd",
         "bojand",
         "dbname",
         "godotenv",
@@ -8,6 +9,7 @@
         "jackc",
         "joho",
         "matrics",
+        "nsqio",
         "pgxpool",
         "postgres",
         "proto",
